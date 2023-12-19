@@ -1,0 +1,86 @@
+h5 {
+    color: #F60100 !important;
+}
+.navbar-logo { 
+    width: 80px;
+}
+
+.nav-link {
+    color: #F60100 !important;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-section{
+    position: relative;
+}
+
+.hero-section .button-login {
+    position: absolute;
+    top:65%;
+    left: 75%;
+    color: white;
+    background-color: #F60100;
+}
+
+.hero-section .button-register {
+    position: absolute;
+    top:85%;
+    left: 75%;
+    color: white;
+    background-color: #F60100;
+}
+
+.hero-section .button-login:hover {
+    color: #F60100;
+    background-color: white;
+}
+
+.hero-section .button-register:hover {
+    color: #F60100;
+    background-color: white;
+}
+
+
+.btn {
+    border: none !important;
+}
+
+form .btn {
+    background-color: #F60100;
+}
+
+form .btn:hover{
+    background-color: white;
+    color: #F60100;
+}
+
+
+#customRange::-webkit-slider-thumb {
+    background: #F60100;
+  }
+  
+  #customRange::-moz-range-thumb {
+    background: #F60100;
+  }
+  
+  #customRange::-ms-thumb {
+    background: #F60100;
+  }
+
+.range-text {
+    color: #F60100;
+}
+
+#formSubmit {
+    background-color: #F60100;
+}
+
+#formSubmit:hover {
+    background-color: white;
+    color: #F60100;
+
+}
+

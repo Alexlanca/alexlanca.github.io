@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oscar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="navbar-logo" src="../images/logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="profile.html"><h5>My Profile</h5></a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="#"><h5>Statistics</h5></a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="https://www.santanderopenacademy.com/pt_pt/courses.html"><h5>Financial Advisor</h5></a>
+                    </li>
+
+                    <li class="nav-item mx-5">
+                        <a class="nav-link" href="https://wa.me/351910477440"><h5>Chatbot</h5></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row md-3">
+            <div class="col-lg-4 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="chart-wrap">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="chart-wrap">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-3">
+                <div class="card mx-1">
+                    <div class="card-body">
+                        <h3 class="mt-3">Tip of the day:</h3>
+                        <h4 class="my-3">Hey, I heard you've been ordering so much
+                            food that the delivery guy now calls you by
+                            your first name! Maybe it's time to switch
+                            things up and try cooking.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="../js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Food', 'Rent', 'Clothes', 'Savings'],
+                datasets: [{
+                label: '% of Spendings',
+                data: [12, 19, 3, 5],
+                borderWidth: 1,
+                }]
+            },
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)',
+                'rgb(255, 05, 86)',
+                
+            ],
+            options: {
+                scales: {
+                y: {
+                    beginAtZero: true
+                }
+                }
+            },
+        });
+    </script>
+
+<script>
+    const line = document.getElementById('myChart2');
+    new Chart(line, {
+            type: 'line',
+            data: {
+                labels: ['June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                datasets: [{
+                label: 'My Portfolio',
+                data: [10000, 9873, 10356, 10896, 12036, 11890,13895],
+                borderWidth: 1,
+                }]
+            },
+
+            options: {
+                scales: {
+                y: {
+                    beginAtZero: false
+                }
+                }
+            },
+        });
+  </script>
+</body>
+</html>
+
+
+
+
+
